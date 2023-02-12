@@ -11,7 +11,7 @@
         <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
         <!--=============== SWIPER CSS ===============-->
-        <link rel="stylesheet" href="">
+        <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
         <!--=============== CSS ===============-->
         <link rel="stylesheet" href="assets/css/styles.css">
@@ -455,13 +455,13 @@
                 <h2 class="section__title">Recent Work</h2>
 
                 <div class="work__filters">
-                    <span class="work__item active-work">All</span>
-                    <span class="work__item">Web</span>
-                    <span class="work__item">Movil</span>
-                    <span class="work__item">Design</span>
+                    <span class="work__item active-work" data-filter='all'>All</span>
+                    <span class="work__item" data-filter='.web'>Web</span>
+                    <span class="work__item" data-filter='.movil'>Movil</span>
+                    <span class="work__item" data-filter='.design'>Design</span>
                 </div>
                 <div class="work__container container grid">
-                    <div class="work__card">
+                    <div class="work__card mix web">
                         <img src="assets/img/work1.jpg" alt="" class="work__img">
 
                         <h3 class="work__title">Web Designer</h3>
@@ -471,7 +471,7 @@
                         </a>
                     </div>
 
-                    <div class="work__card">
+                    <div class="work__card mix movil">
                         <img src="assets/img/work2.jpg" alt="" class="work__img">
 
                         <h3 class="work__title">Web Designer1</h3>
@@ -481,7 +481,7 @@
                         </a>
                     </div>
 
-                    <div class="work__card">
+                    <div class="work__card mix design">
                         <img src="assets/img/work3.jpg" alt="" class="work__img">
 
                         <h3 class="work__title">Web Designer2</h3>
@@ -491,7 +491,7 @@
                         </a>
                     </div>
 
-                    <div class="work__card">
+                    <div class="work__card mix web ">
                         <img src="assets/img/work4.jpg" alt="" class="work__img">
 
                         <h3 class="work__title">Web Designer3</h3>
@@ -501,7 +501,7 @@
                         </a>
                     </div>
 
-                    <div class="work__card">
+                    <div class="work__card mix movil">
                         <img src="assets/img/work5.jpg" alt="" class="work__img">
 
                         <h3 class="work__title">Web Designer4</h3>
@@ -516,7 +516,46 @@
 
             <!--=============== TESTIMONIALS ===============-->
             <section class="testimonial section">
-                
+                <span class="section__subtitle">My clients say</span>
+                <h2 class="section__title">Testimonial</h2>
+
+                <div class="testimonial__container container swiper">
+
+                    <div class="swiper-wrapper">
+                        <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
+
+                            <h3 class="testimonial__name">Jhon Doe</h3>
+                            <p class="testimonial__description">
+                                A really good job, all aspect of the project were
+                                followed step by step and width good results.
+                            </p>
+                        </div>
+
+                        <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
+                            
+                            <h3 class="testimonial__name">Paul Two</h3>
+                            <p class="testimonial__description">
+                                A really good job, all aspect of the project were
+                                followed step by step and width good results.
+                            </p>
+                        </div>  
+
+                        <div class="testimonial__card swiper-slide">
+                            <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+                            
+                            <h3 class="testimonial__name">CLient three</h3>
+                            <p class="testimonial__description">
+                                A really good job, all aspect of the project were
+                                followed step by step and width good results.
+                            </p>
+                        </div>                      
+                    </div>
+
+                    <div class="swiper-pagination"></div>
+
+                </div>
             </section>
 
             <!--=============== CONTACT ===============-->
@@ -534,10 +573,10 @@
         <script src=""></script>
 
         <!--=============== SWIPER JS ===============-->
-        <script src=""></script>
+        <script src="assets/js/swiper-bundle.min.js"></script>
 
         <!--=============== MIXITUP FILTER ===============-->
-        <script src=""></script>
+        <script src="assets/js/mixitup.min.js"></script>
 
         <!--=============== MAIN JS ===============-->
         <script src="assets/js/main.js"></script>

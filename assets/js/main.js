@@ -32,13 +32,45 @@ modalClose.forEach((mc, i) =>{
 
 
 /*=============== MIXITUP FILTER PORTFOLIO ===============*/
-
+let mixerPortfolio = mixitup('.work__container',{
+    selectors: {
+        target:'.work__card'
+    },
+    animation : {
+        duration : 300
+    }
+});
 
 /* Link active work */ 
+const linkWork = document.querySelectorAll('.work__item')
 
+function activeWork() {
+    linkWork.forEach(l=> l.classList.remove('active-work'))
+    this.classList.add('active-work')
+}
+
+linkWork.forEach(l=> l.addEventListener('click', activeWork))
 
 /*=============== SWIPER TESTIMONIAL ===============*/
+let swiperTestimonial = new Swiper(".testimonial__container", {
+    spaceBetween: 24,
+    loop: true,
+    grabCursor: true,
 
+    pagination: {
+        el: ".swipper-pagination",
+        clickable: true,
+    },
+    breakpoints: {
+        576: {
+            sliderPreview : 2,
+        },
+        768: {
+            sliderPreview : 2,
+            spaceBetween: 48,
+        },
+    },
+});
 
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
