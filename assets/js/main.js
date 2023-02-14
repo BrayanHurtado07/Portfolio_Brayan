@@ -58,7 +58,7 @@ let swiperTestimonial = new Swiper(".testimonial__container", {
     grabCursor: true,
 
     pagination: {
-        el: ".swipper-pagination",
+        el: ".swiper-pagination",
         clickable: true,
     },
     breakpoints: {

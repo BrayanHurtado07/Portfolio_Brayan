@@ -652,11 +652,11 @@ img {
 }
 
 /* Swiper class */
-.swiper-pagination-buller{
+.swiper-pagination-bullet{
   background-color: var(--text-color-light);
 }
 
-.swiper-pagination-buller-active{
+.swiper-pagination-bullet-active{
   background-color: var(--first-color);
 }
 
