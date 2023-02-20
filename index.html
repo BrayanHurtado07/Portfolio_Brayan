@@ -71,7 +71,7 @@
             <div class="home__container container grid">
                 <div class="home__data">
                     <span class="home_greeting">Hello, I'm</span>
-                    <h1 class="home__name">Brayan Manuel</h1>
+                    <h1 class="home__name">Brayan Hurtado</h1>
                     <h3 class="home__education">Web Developer</h3>
 
                     <div class="home__buttons">
@@ -125,7 +125,7 @@
                         <div class="about__box">
                             <i class='bx bx-briefcase-alt about__icon'></i>
                             <h3 class="about__title">Completed</h3>
-                            <span class="about__subtitle">10 + Proyects</span>
+                            <span class="about__subtitle">6 + Proyects</span>
                         </div>
 
                         <div class="about__box">
@@ -137,7 +137,9 @@
 
                     <p class="about__description">
                         Backend Developer,
-                        I have years of experience and many clients are happy with the projects carried out.
+                        I have 3 years of experience as a frontend and backend developer in my institute, I also have 2
+                        months of experience in the Systems area with the MarketPlace project in the company Consigue
+                        Ventas as a Backend Developer.
                     </p>
 
                     <a href="#contact" class="button">Contact Me</a>
@@ -525,40 +527,39 @@
 
         <!--=============== CERTIFICATIONS ===============-->
         <section class="testimonial section">
-            <span class="section__subtitle">My clients say</span>
-            <h2 class="section__title">Testimonial</h2>
+            <span class="section__subtitle">My achievements</span>
+            <h2 class="section__title">Certifications</h2>
 
             <div class="testimonial__container container swiper">
 
                 <div class="swiper-wrapper">
                     <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/testimonial1.png" alt="" class="testimonial__img">
+                        <div class="work__card mix web">
+                            <img src="assets/img/work1.png" alt="" class="work__img">
 
-                        <h3 class="testimonial__name">Jhon Doe</h3>
-                        <p class="testimonial__description">
-                            A really good job, all aspect of the project were
-                            followed step by step and width good results.
-                        </p>
+                            <h3 class="testimonial__name">Certificate</h3>
+                            <p class="testimonial__description">
+                                FUNDAMENTOS DE PROGRAMACIÓN Y TECNOLOGÍAS DE LA INFORMACIÓN
+                            </p>
+                        </div>
                     </div>
 
                     <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/testimonial2.png" alt="" class="testimonial__img">
+                        <img src="assets/img/work2.png" alt="" class="work__img">
 
-                        <h3 class="testimonial__name">Paul Two</h3>
-                        <p class="testimonial__description">
-                            A really good job, all aspect of the project were
-                            followed step by step and width good results.
-                        </p>
+                            <h3 class="testimonial__name">Certificate</h3>
+                            <p class="testimonial__description">
+                                DESARROLLO DE SOFTWARE Y GESTIÓN DE DATOS
+                            </p>
                     </div>
 
                     <div class="testimonial__card swiper-slide">
-                        <img src="assets/img/testimonial3.png" alt="" class="testimonial__img">
+                        <img src="assets/img/work3.jpg" alt="" class="work__img">
 
-                        <h3 class="testimonial__name">CLient three</h3>
-                        <p class="testimonial__description">
-                            A really good job, all aspect of the project were
-                            followed step by step and width good results.
-                        </p>
+                            <h3 class="testimonial__name">Certificate</h3>
+                            <p class="testimonial__description">
+                                DESARROLLO DE SOFTWARE Y GESTIÓN DE DATOS
+                            </p>
                     </div>
                 </div>
 
@@ -613,16 +614,18 @@
                     <form id="form" name="contact" netlify action="" class="contact__form">
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Names</label>
-                            <input name="name" type="text" id="name" placeholder="Insert your name" required class="contact__form-input">
+                            <input name="name" type="text" id="name" placeholder="Insert your name" required
+                                class="contact__form-input">
                         </div>
 
                         <div class="contact__form-div">
                             <label for="" class="contact__form-tag">Mail</label>
-                            <input name="email" type="email" id="email" placeholder="Insert your email" required class="contact__form-input">
+                            <input name="email" type="email" id="email" placeholder="Insert your email" required
+                                class="contact__form-input">
                         </div>
 
                         <div class="contact__form-div contact__form-area">
-                            <label for="" class="contact__form-tag">Project</label>
+                            <label for="" class="contact__form-tag">Message</label>
                             <textarea name="message" id="message" cols="30" rows="10" placeholder="Write your project"
                                 class="contact__form-input"></textarea>
                         </div>
@@ -683,23 +686,6 @@
 
     <!--=============== MAIN JS ===============-->
     <script src="assets/js/main.js"></script>
-
-    <!--=============== CONTACT JS ===============-->
-
-    <!-- <script>
-        const $form = document.querySelector('#form') 
-        const $buttonMailto = document.querySelector('#truco');
-
-        $form.addEventListener('submit', handleSubmit)
-
-        function handleSubmit(event) {
-            event.preventDefault()
-            const form = new FormData(this)
-
-            $buttonMailto.setAttribute('href', `mailto:ibrayanhurtado@gmail.com?subject=${form.get('name')}${form.get('email')}&body=${form.get('message')}`)
-            $buttonMailto.click()
-        }
-    </script> -->
 
 </body>
 
