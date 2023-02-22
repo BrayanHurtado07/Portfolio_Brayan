@@ -672,6 +672,17 @@ body.light-theme{
   margin-bottom: .75rem;
 }
 
+.work__img1{
+  border-radius: 1rem;
+  margin-bottom: .75rem;
+  transition: 2s;
+}
+
+.work__img1:hover{
+  transform: scale(1.2);
+  transition: 1s;
+}
+
 .work__title{
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
